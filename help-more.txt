@@ -1,0 +1,59 @@
+  Prefix is C-s  (press C-s, let go, then the key)
+  tmux words: session > window (the tabs up top) > pane (a split)
+  j/k or arrows to scroll, q to close
+
+  Panes (splits)
+    h j k l      move to pane left / down / up / right   (arrows work too)
+    C-h/j/k/l    same, no prefix (also crosses into Neovim splits)
+    ;            jump back to the last pane
+    o            next pane
+    q            flash pane numbers, then press one to jump to it
+    %            split side by side
+    "            split top / bottom
+    z            zoom pane to full window (again to unzoom)
+    { }          swap pane up / down
+    C-o          rotate panes in the window
+    Space        cycle layouts
+    M-1 .. M-5   preset layouts (even, main, tiled)
+    C-arrow      resize by 1      M-arrow   resize by 5
+    !            break pane out into its own window
+    M            move pane into another window (type mysession:2, :3, ...)
+    m            mark pane (for "Swap Marked" in the < and > menus)
+    x            kill pane
+
+  Windows (tabs)
+    c            new window
+    n  p         next / previous window
+    i            jump back to the last window
+    0 .. 9       go to window number
+    '            go to window by typed index
+    w            pick from a list of all windows
+    f            find window by text
+    ,            rename window
+    .            move window to another index or session (mysession:4)
+    <            window menu (swap left/right, kill, rename ...)
+    >            pane menu   (splits, swap, zoom, kill ...)
+    &            kill window
+
+  Sessions
+    L  or  W     jump back to the last session
+    (  )         previous / next session
+    s            pick from a list of sessions
+    $            rename session
+    d            detach (session keeps running; tmux attach to return)
+
+  Copy / scroll
+    [            enter copy mode (vi keys), then:
+                   C-u / C-d   half page up / down
+                   / or ?      search down / up
+                   Space       start selection, Enter or y copies
+                   q           back to normal
+    PgUp         copy mode, scrolled up one page
+    ]            paste
+
+  Other
+    :            tmux command prompt
+    r            reload tmux.conf
+    /            what does this key do?
+    ?            every key binding
+    H            short help    K   this list

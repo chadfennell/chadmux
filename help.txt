@@ -1,0 +1,32 @@
+  Prefix is C-s  (press C-s, let go, then the key)
+
+  Navigate
+    h j k l      move to pane left / down / up / right
+    C-h/j/k/l    same, no prefix (also crosses into Neovim splits)
+    i            jump back to the last window (tab)
+    L  or  W     jump back to the last session
+    s            pick a session from a list
+    w            pick a window from a list
+
+  Rename
+    ,            rename window
+    $            rename session
+
+  Move
+    M            move this pane to another window, then type a target:
+                   mysession     its current window
+                   mysession:2   window 2 of mysession
+                   :3            window 3 of this session
+    .            move this window to another index/session
+
+  Scroll back
+    [            enter scroll/copy mode, then:
+                   C-u / C-d   half page up / down
+                   / or ?      search down / up
+                   q           back to normal
+
+  Other
+    r           reload tmux.conf
+    ?            every key binding
+    H            this help  (q to close)
+    K            longer list: splits, zoom, resize, copy mode ...
